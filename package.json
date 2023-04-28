@@ -1,35 +1,34 @@
 {
-  "name": "highlightjs-your-language",
+  "name": "highlightjs-ballerina",
   "version": "0.1.0",
-  "author": "John Foster",
-  "description": "A new language template set up when creating a language definition for highlightjs",
-  "main": "src/languages/your-language.js",
+  "author": "Erik Schierboom",
+  "description": "Add highlightjs syntax highlighting for the Ballerina language",
+  "main": "src/languages/ballerina.js",
   "scripts": {
     "test": "jasmine"
   },
   "files": [
-    "src/languages/your-language.js"
+    "src/languages/ballerina.js"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jf990/highlightjs-language-template.git"
   },
   "keywords": [
-    "your-language",
+    "ballerina",
     "javascript",
     "highlight",
     "highlight.js",
     "highlightjs",
-    "syntax",
-    "template"
+    "syntax"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jf990/highlightjs-language-template/issues"
   },
   "homepage": "https://github.com/jf990/highlightjs-language-template",
   "devDependencies": {
-    "highlight.js": "^10.7.1",
-    "jasmine": "^3.7.0"
+    "highlight.js": "^11.7.0",
+    "jasmine": "^4.6.0"
   }
 }
