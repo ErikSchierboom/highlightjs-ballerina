@@ -1,16 +1,14 @@
-# project-name
+# highlightjs-ballerina
 
-Describe ballerina.
-Link to [ballerina grammar description](https://official.language.com).
+Ballerina is an open-source programming language for the cloud that makes it easier to use, combine, and create network services.
+
+Link to [ballerina grammar description](https://ballerina.io/spec/lang/master/).
 
 **Built with**
 
 - [highlightjs](https://github.com/highlightjs/highlight.js)
-- []()
 
 ## Usage
-
-Explain how to install and use your grammar.
 
 Include the Highlight.js library in your webpage or Node app, then load this module.
 

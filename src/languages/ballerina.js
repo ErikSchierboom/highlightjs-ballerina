@@ -1,9 +1,13 @@
 /*
- Language: ballerina
- Category: scripting
- Author: author <author@website.com>
- Description: This is a placeholder language to be replaced by ballerina. Tell us what ballerina is all about.
+ Language: Ballerina
+ Author: Erik Schierboom <erik_schierboom@gotmail.com>
+ Description: Ballerina is an open-source programming language for the cloud that makes it easier to use, combine, and create network services.
+ Website: https://ballerina.io/
 */
+
+/**
+ * @param { import("@types/highlightjs") } hljs
+ */
 module.exports = function (hljs) {
   var KEYWORDS = {
     keyword: "assign if for while function do return else break",
@@ -21,8 +25,8 @@ module.exports = function (hljs) {
   };
 
   return {
-    name: "ballerina",
-    aliases: ["your-lang"],
+    name: "Ballerina",
+    aliases: ["ballerina"],
     keywords: KEYWORDS,
     case_insensitive: true,
     disableAutodetect: false,
