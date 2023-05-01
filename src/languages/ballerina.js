@@ -9,27 +9,71 @@
  * @param { import("@types/highlightjs") } hljs
  */
 module.exports = function (hljs) {
-  var KEYWORDS = {
-    keyword: "assign if for while function do return else break",
-    literal: "true false null void",
-    built_in: "builtin otherbuiltin",
-  };
-  var NUMBER = {
-    className: "number",
-    variants: [
-      { begin: "\\b(0[bB][01]+)" },
-      { begin: "\\b(0[oO][0-7]+)" },
-      { begin: hljs.C_NUMBER_RE },
-    ],
-    relevance: 0,
+  const KEYWORD = [
+    "import",
+    "public",
+    "private",
+    "foreach",
+    "function",
+    "returns",
+    "return",
+    "start",
+    "check",
+    "readonly",
+    "type",
+    "let",
+    "in",
+    "from",
+    "select",
+    "trap",
+    "typeof",
+    "check",
+    "checkpanic",
+    "new",
+    "record",
+    "if",
+    "else",
+    "distinct",
+    "panic",
+    "class",
+    "const",
+    "final",
+    "match",
+    "base64",
+    "break",
+    "continue",
+  ];
+
+  const BUILT_IN = [
+    "enum",
+    "byte",
+    "boolean",
+    "string",
+    "int",
+    "float",
+    "decimal",
+    "any",
+    "never",
+  ];
+
+  const LITERAL = ["null", "true", "false"];
+
+  const KEYWORDS = {
+    keyword: KEYWORD,
+    built_in: BUILT_IN,
+    literal: LITERAL,
   };
 
   return {
     name: "Ballerina",
     aliases: ["ballerina"],
     keywords: KEYWORDS,
-    case_insensitive: true,
+    case_insensitive: false,
     disableAutodetect: false,
-    contains: [hljs.APOS_STRING_MODE, hljs.QUOTE_STRING_MODE, NUMBER],
+    contains: [
+      hljs.HASH_COMMENT_MODE,
+      hljs.C_NUMBER_MODE,
+      hljs.QUOTE_STRING_MODE,
+    ],
   };
 };

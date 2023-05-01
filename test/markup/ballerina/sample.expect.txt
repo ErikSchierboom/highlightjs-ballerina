@@ -1,11 +1,9 @@
-/* Highlight.js test <span class="hljs-keyword">for</span> some new ballerina */
-
-<span class="hljs-keyword">function</span> myFunction(parameter) {
-    <span class="hljs-keyword">assign</span> var = <span class="hljs-number">1234</span> + <span class="hljs-built_in">otherbuiltin</span>(<span class="hljs-literal">void</span>)
-    <span class="hljs-keyword">assign</span> const to <span class="hljs-string">&quot;a quoted string&quot;</span>
-    <span class="hljs-keyword">if</span> (parameter != <span class="hljs-literal">null</span>) {
-        <span class="hljs-keyword">return</span> parameter
-    } <span class="hljs-keyword">else</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
-    }
-}
+<span class="hljs-comment"># Highlight.js test for Ballerina code</span>
+   <span class="hljs-keyword">public</span> <span class="hljs-keyword">function</span> convert(<span class="hljs-built_in">int</span> n) <span class="hljs-keyword">returns</span> <span class="hljs-built_in">string</span> {
+       <span class="hljs-built_in">string</span> drops = <span class="hljs-string">&quot;&quot;</span>;
+       <span class="hljs-keyword">if</span> n % <span class="hljs-number">3</span> == <span class="hljs-number">0</span> { 
+           drops += <span class="hljs-string">&quot;Pling&quot;</span>;
+       }
+       <span class="hljs-keyword">return</span> drops.length() &gt; <span class="hljs-number">0</span> ? drops : n.toString();
+   }
+    
